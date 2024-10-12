@@ -1,0 +1,28 @@
+skip 1
+fields account_name, date, description, check_number, credit_debit, amount, override
+currency $
+account1 assets:joint:house
+account2 expenses:unknown
+date-format %Y-%-m-%-d
+
+if %credit_debit Debit
+    skip
+
+if
+LOAN PYMT
+    skip
+
+if
+INTEREST PAYMENT SPLIT OUT
+    account2 expenses:mortgage:interest
+
+if
+ESCROW 5 CR
+    account2 expenses:mortgage:escrow
+
+if
+PRINCIPAL CURTAILMENT
+PRINCIPAL PAYMENT SPLIT OUT
+    account2 expenses:mortgage:principal
+
+source ./../out/isabellabank/mortgage.csv

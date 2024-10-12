@@ -1,0 +1,11 @@
+skip 1
+fields date, posting-date, description, amount, _, override
+currency $
+account1 liabilities:ben:discover
+account2 expenses:unknown
+date-format %-m/%-d/%Y
+
+## common rules
+include common.rules
+
+source ./../out/discover/discover*.csv

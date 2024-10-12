@@ -1,0 +1,11 @@
+skip 1
+fields details, date, description, amount, type, _, check_slip_number, _, override
+currency $
+account1 assets:joint:chase:checking
+account2 expenses:unknown
+date-format %-m/%-d/%Y
+
+## common rules
+include common.rules
+
+source ./../out/chase/chase_checking*.csv

@@ -1,0 +1,15 @@
+skip 1
+fields date, posting-date, description, _, _, amount, _, override
+currency $
+account1 liabilities:joint:chase:sapphire
+account2 expenses:unknown
+date-format %-m/%-d/%Y
+
+## common rules
+include common.rules
+
+if
+Payment Thank You
+    account2 equity:transfer
+
+source ./../out/chase/chase_sapphire*.csv

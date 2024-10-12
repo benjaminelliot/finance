@@ -1,0 +1,31 @@
+if
+%override eating_out
+    account2 expenses:eating_out
+
+if
+%override hotel
+    account2 expenses:travel:hotel
+    
+if
+%override gifts
+    account2 expenses:shopping:gifts
+
+if
+%override film_income
+    account2 income:carolann:film
+
+if
+%override film_cost
+    account2 expenses:hobby:film
+
+if
+%override phone
+    account2 expenses:phone
+
+if
+%override entertainment
+    account2 expenses:entertainment
+
+if
+%override bagpipes
+    account2 expenses:hobby:bagpipes
