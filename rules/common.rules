@@ -2,6 +2,7 @@ include override.rules
 
 if
 DIGITALOCEAN
+PORKBUN
 PADDLE.NET\* KIRBY
 NAME-CHEAP.COM
 CLOUDFLARE
@@ -64,6 +65,8 @@ CHERRY REPUBLIC
 MENS WEARHOUSE
 THE SALVATION ARMY
 THE UPS STORE
+BATTERIES\+BULBS
+Kindle Svcs
     account2 expenses:shopping
 
 if
@@ -136,6 +139,7 @@ DTE ENERGY
 
 if
 CITY OF MT. PLEA WATR SEWER
+CITY OF MT. PLEA CO ENTRY DESCR:WATR SEWER
     account2 expenses:utilities:water_sewer
 
 if
@@ -418,6 +422,7 @@ ISABELLA BANK
 if
 ATM WITHDRAW
 WITHDRAWAL
+ATM DEBIT
     account2 assets:cash
 
 if
